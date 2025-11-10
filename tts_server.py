@@ -40,9 +40,9 @@ print("Initializing IndexTTS model...")
 tts = IndexTTS2(
     cfg_path=TTS_CONFIG_PATH,
     model_dir=TTS_MODEL_DIR,
-    use_fp16=False,
-    use_cuda_kernel=False,
-    use_deepspeed=False
+    use_fp16=True,
+    use_cuda_kernel=True,
+    use_deepspeed=True
 )
 print("TTS model initialized successfully.")
 
